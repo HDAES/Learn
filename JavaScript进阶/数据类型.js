@@ -1,7 +1,7 @@
 /*
  * @Author: HADES
  * @Date: 2022-03-24 15:01:38
- * @LastEditTime: 2022-03-24 16:26:05
+ * @LastEditTime: 2022-03-24
  * @Description: Js数据类型相关
  */
 
@@ -72,3 +72,4 @@ function isFloat1(n) {
 function isFloat2(n) {
     return ~~n !== n
 }
+
