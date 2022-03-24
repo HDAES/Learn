@@ -9,10 +9,11 @@ const myVnode1 = h('ul', {}, [
     h('li', { key: 'C' }, 'C'),
 ])
 const myVnode2 = h('ul', {}, [
+
+    h('li', { key: 'Q' }, 'xxx'),
     h('li', { key: 'A' }, 'A'),
     h('li', { key: 'B' }, 'B'),
     h('li', { key: 'C' }, 'C'),
-    h('li', { key: 'E' }, 'E'),
 ])
 
 
