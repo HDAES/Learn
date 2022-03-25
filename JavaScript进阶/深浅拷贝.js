@@ -1,12 +1,12 @@
 /*
  * @Author: HADES
  * @Date: 2022-03-24 15:33:19
- * @LastEditTime: 2022-03-24 16:14:30
+ * @LastEditTime: 2022-03-25
  * @Description: 深浅拷贝 
  */
 
-//浅拷贝 
-// 1.Object.assign()
+//浅拷贝   
+// 1.Object.assign()    性能高于展开运算符
 let obj1 = { person: { name: "kobe", age: 41 }, sports: 'basketball' };
 let obj2 = Object.assign({}, obj1);
 obj2.person.name = "wade";

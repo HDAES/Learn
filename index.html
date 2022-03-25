@@ -1,3 +1,9 @@
+<!--
+ * @Author: HADES
+ * @Date: 2022-03-25
+ * @LastEditTime: 2022-03-25
+ * @Description: 
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,39 +16,12 @@
 
 <body>
     <div id="app">
-        <h1>{{message}}</h1>
-        <button @click="handleClick">click</button>
+
     </div>
-    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.js"></script>
-    <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                message: 'Hello Vue!',
-            },
-            computed: {
-                // 计算属性的 getter
-                reversedMessage: function () {
-                    console.log('computed')
-                    // `this` 指向 vm 实例
-                    return this.message.split('').reverse().join('')
-                }
-            },
-            watch: {
-                message: {
-                    handler: function () {
-                        console.log('watch')
-                    }
-                }
-            },
-            methods: {
-                handleClick() {
-                    console.log("click")
-                    this.message = this.message + 'x    '
-                }
-            }
-        })
-        console.log(app)
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.js"></script> -->
+    <script src="./JavaScript进阶/new的实现.js">
+
+
     </script>
 </body>
 
