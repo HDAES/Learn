@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+
+    <script>
+        // 1. 创建节点
+        let content = document.createElement('div')
+        for (let i = 0; i < 10; i++) {
+            let dom = document.createElement('div')
+            dom.id = i + '-Id'
+            dom.className = i + '-Class'
+            dom.innerText = i + '-Text'
+            content.appendChild(dom)
+        }
+
+
+        //2.获取节点
+        let app = document.getElementById('app')
+        app.parentNode.insertBefore(content, app)
+        app.parentNode.removeChild(app)
+
+
+        let id0 = document.getElementById('0-Id')
+        id0.innerText = '123123'
+        // insertBefore 第二个参数为null,会在最后插入, 且如果插入已存在节点,会直接移动
+        id0.parentNode.insertBefore(id0, null)
+
+    </script>
+</body>
+
+</html>
